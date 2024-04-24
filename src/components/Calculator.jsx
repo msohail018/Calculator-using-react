@@ -21,8 +21,8 @@ const Calculator = () => {
     if(lastChar===undefined||lastChar==='+'||lastChar==='-'||lastChar==='/'||lastChar==='*')
     return
     let result = eval(Current)+''
-    if(result.length>13){
-      result=result.slice(0,13);
+    if(result.length>7){
+      result=result.slice(0,7);
     }
     setPrevious(Current)
     setCurrent(result)
